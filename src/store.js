@@ -1,5 +1,6 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex from 'vuex';
+import VuexPersistence from 'vuex-persist';
 
 Vue.use(Vuex)
 
@@ -37,5 +38,6 @@ export default new Vuex.Store({
     updatePoll({commit},payload){
       commit('UPDATE_POLL',payload);
     }
-  }
+  },
+  plugins: [new VuexPersistence().plugin]
 })
