@@ -1,18 +1,21 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div >
+    <h3>Voting App</h3>
+    <AddPoll/>
+    <PollsList />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import AddPoll from '@/components/addPoll.vue';
+import PollsList from '@/components/pollsList';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    AddPoll,
+    PollsList
   }
 }
 </script>

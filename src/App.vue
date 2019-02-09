@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
@@ -26,4 +22,28 @@
     }
   }
 }
+  .element_block{
+    margin-left: 7%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .title{
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-family: "sans-serif";
+    text-align: left;
+  }
+  button{
+    line-height: 44px;
+    border-radius: 2px;
+    background-color: #ffbc00;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    width: 120px;
+    color: #000;
+    display: inherit;
+  }
 </style>
